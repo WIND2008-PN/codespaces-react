@@ -4,14 +4,14 @@ import { AuthProvider } from './contexts/AuthContext';
 import ProtectedRoute from './components/ProtectedRoute';
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
-import AdminPage from './pages/AdminPage';
+import Admin from './pages/Admin';
 import ImageStoragePage from './pages/ImageStoragePage';
 import GoogleSheetPage from './pages/GoogleSheetPage';
 import GoogleDocPage from './pages/GoogleDocPage';
 import SearchPage from './pages/SearchPage';
 import SettingsPage from './pages/SettingsPage';
-import AdminCustomizeFormPage from './pages/AdminCustomizeFormPage';
-import AdminWebhookSettingsPage from './pages/AdminWebhookSettingsPage';
+import AdminCustomizeFormPage from './Admin/AdminCustomizeFormPage';
+import AdminWebhookSettingsPage from './Admin/AdminWebhookSettingsPage';
 import './App.css';
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
             <Route path="/" exact component={HomePage} />
             <Route path="/login" component={LoginPage} />
             <ProtectedRoute path="/admin">
-              <AdminPage />
+              <Admin />
             </ProtectedRoute>
             <Route path="/image-storage" component={ImageStoragePage} />
             <Route path="/google-sheet" component={GoogleSheetPage} />
