@@ -288,6 +288,40 @@ body.dark .result-item,
   border-bottom: 1px solid #444;
 }
 
+table {
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+th, td {
+  border-bottom: 1px solid #444;
+}
+
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f6fa;
+}
+
+.login-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  padding: 32px 40px;
+  max-width: 350px;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .login-card {
+    padding: 24px 10px;
+    max-width: 95vw;
+  }
+}
+
 @media (max-width: 900px) {
   .container {
     padding: 16px;

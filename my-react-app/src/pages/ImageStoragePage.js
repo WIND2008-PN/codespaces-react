@@ -11,8 +11,9 @@ const ImageStoragePage = () => {
   };
 
   return (
-    <div style={{ textAlign: 'center', padding: '20px' }}>
-      <h1>Image Storage</h1>
+    <div className="container" style={{ textAlign: 'center', padding: '20px' }}>
+      <h2>Image Storage (Mockup)</h2>
+      <p>หน้านี้สำหรับอัปโหลดและดูภาพ (ยังไม่เชื่อมต่อ cloud จริง)</p>
       <input type="file" accept="image/*" multiple onChange={handleImageUpload} />
       <div style={{ marginTop: '20px' }}>
         {images.length > 0 ? (

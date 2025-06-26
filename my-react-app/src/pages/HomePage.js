@@ -1,13 +1,3 @@
-import React from 'react';
-import CenteredIcon from '../components/CenteredIcon';
-
-const HomePage = () => {
-  return (
-    <div>
-      <h1>Welcome to the Home Page</h1>
-      <CenteredIcon />
-    </div>
-  );
-};
-
-export default HomePage;
+```javascript
+        <Link to="/search" className="App-link">ค้นหาไฟล์ MicroBit</Link>
+```
