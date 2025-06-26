@@ -6,12 +6,14 @@ export function AuthProvider({ children }) {
   const [user, setUser] = useState(null); // { username, role }
 
   const login = (username, password) => {
-    // ตัวอย่าง: รหัส admin คือ admin/admin123
     if (username === 'admin' && password === 'admin123') {
       setUser({ username, role: 'admin' });
       return true;
     }
-    // เพิ่ม logic สำหรับ user อื่นๆ ได้
+    if (username === 'user' && password === 'user123') {
+      setUser({ username, role: 'user' });
+      return true;
+    }
     return false;
   };
 

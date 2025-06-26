@@ -9,6 +9,9 @@ import ImageStoragePage from './pages/ImageStoragePage';
 import GoogleSheetPage from './pages/GoogleSheetPage';
 import GoogleDocPage from './pages/GoogleDocPage';
 import SearchPage from './pages/SearchPage';
+import SettingsPage from './pages/SettingsPage';
+import AdminCustomizeFormPage from './pages/AdminCustomizeFormPage';
+import AdminWebhookSettingsPage from './pages/AdminWebhookSettingsPage';
 import './App.css';
 
 function App() {
@@ -26,6 +29,13 @@ function App() {
             <Route path="/google-sheet" component={GoogleSheetPage} />
             <Route path="/google-doc" component={GoogleDocPage} />
             <Route path="/search" component={SearchPage} />
+            <Route path="/settings" component={SettingsPage} />
+            <ProtectedRoute path="/admin/customize-form">
+              <AdminCustomizeFormPage />
+            </ProtectedRoute>
+            <ProtectedRoute path="/admin/webhook-settings">
+              <AdminWebhookSettingsPage />
+            </ProtectedRoute>
           </Switch>
         </div>
       </Router>
